@@ -2,6 +2,7 @@ services:
   - type: web
     name: study-lenses-demo
     env: node
+    plan: free
     buildCommand: npm install --legacy-peer-deps
     startCommand: npm run demo:deployed
     envVars:
