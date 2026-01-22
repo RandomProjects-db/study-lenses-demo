@@ -3,10 +3,15 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'snippetry'
+app = 'study-lenses-demo'
 primary_region = 'ewr'
 
 [build]
+  [build.args]
+    NODE_VERSION = "16"
+
+[env]
+  NPM_CONFIG_LEGACY_PEER_DEPS = "true"
 
 [http_service]
   internal_port = 4567
