@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: study-lenses-demo
+    env: node
+    buildCommand: npm install --legacy-peer-deps
+    startCommand: npm run demo:deployed
+    envVars:
+      - key: NODE_VERSION
+        value: 16
