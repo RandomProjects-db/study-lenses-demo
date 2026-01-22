@@ -1,0 +1,10 @@
+providers = ["..."]
+
+[phases.setup]
+nixPkgs = ["nodejs-16_x"]
+
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
+
+[start]
+cmd = "npm run demo:deployed"
